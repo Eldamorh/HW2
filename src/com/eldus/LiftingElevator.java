@@ -14,16 +14,6 @@ public class LiftingElevator extends MainElevator implements Elevator {
     }
 
     @Override
-    public int getMaxWeight() {
-        return maxWeight;
-    }
-
-    @Override
-    public double getSpeed() {
-        return speed;
-    }
-
-    @Override
     public boolean moveToFloor(int floor, int weight) {
         if (currentFloor != floor && floor > 0 && weight < maxWeight && weight > minWeight) {
             System.out.println("Едем на " + floor + " этаж");

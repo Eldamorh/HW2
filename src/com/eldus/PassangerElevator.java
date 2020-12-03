@@ -11,16 +11,6 @@ public class PassangerElevator extends MainElevator implements Elevator {
 
 
     @Override
-    public int getMaxWeight() {
-        return maxWeight;
-    }
-
-    @Override
-    public double getSpeed() {
-        return speed;
-    }
-
-    @Override
     public boolean moveToFloor(int floor, int weight) {
 
         if (currentFloor != floor && floor > 0 && weight < maxWeight) {
